@@ -130,12 +130,14 @@ class ButtonHandler implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         String text = jTextField.getText().toUpperCase();
-        // Replacing any non letters with space
-            text = text.replaceAll("[^A-Za-z]", "");
+        // Remove non alphanumeric characters
+        text = text.replaceAll("[^A-Za-z]", "");
 
-            // Setting name to first three letters of text box
-            if (text.length() > 0){
-            text = text.substring(0, 3);
+        // Setting name to first three letters of text box
+        if (text.length() > 0){
+            if(text.length() > 3){
+                text = text.substring(0, 3);
+            }
             panel.setNameOfPlayer(text);
             frame.addHighScore(text);
         }
