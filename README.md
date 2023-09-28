@@ -1,6 +1,8 @@
 # PacMan Game in Java
 A simple clone of PacMan made in Java
 
+[PacManDemo.webm](https://github.com/MarkArren/PacMan/assets/34402464/a3f6ee78-f781-4b83-a596-4c9449e9951a)
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
